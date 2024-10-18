@@ -89,7 +89,6 @@ def correlate(mind_fix,mind_mov,disp_hw,grid_sp,shape, ch=12):
     return ssd, ssd_argmin
 
 
-
 #solve two coupled convex optimisation problems for efficient global regularisation
 def coupled_convex(ssd,ssd_argmin,disp_mesh_t,grid_sp,shape):
     H = int(shape[0]); W = int(shape[1]); D = int(shape[2]);
@@ -220,7 +219,6 @@ def compute_steps_for_sliding_window(patch_size, image_size, step_size=.5):
         steps.append(steps_here)
 
     return steps
-
 
 
 def get_gaussian(patch_size, sigma_scale=1. / 8, device='cuda') -> np.ndarray:
